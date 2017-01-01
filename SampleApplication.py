@@ -101,6 +101,8 @@ class App(QWidget):
 
 
         totalcopied = 0
+
+        #TODO: Thread this, if ever care about UI updates during copies
         for file, mod_time in recentlymodified.items():
             print('%s modded %s type %s' %(file,mod_time,type(mod_time)))
             print('year %s ' % mod_time.year)
